@@ -6,12 +6,6 @@ import geocoder
 import folium
 import webbrowser
 
-# Função para obter o endereço MAC da interface WLAN0
-def get_mac_address():
-    mac_file = open("/sys/class/net/wlan0/address")
-    mac_address = mac_file.read().strip()
-    mac_file.close()
-    return mac_address
 
 # Função para obter a localização a partir do endereço MAC
 def get_location(latitude, longitude):
